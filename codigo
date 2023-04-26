@@ -1,0 +1,50 @@
+diccionario <- list(D = "v",
+                    Z = "i",
+                    E = "d",
+                    H = "A",
+                    K = "M",
+                    G = "E",
+                    A = "n",
+                    R = "o",
+                    J = "s",
+                    P = "l",
+                    U = "u",
+                    T = "z",
+                    Y = "p",
+                    G = "e",
+                    E = "d",
+                    G = "e",
+                    O = "r",
+                    G = "e",
+                    J = "s",
+                    N = "q",
+                    U = "u",
+                    G = "e",
+                    K = "m",
+                    R = "o",
+                    O = "r",
+                    G = "e",
+                    J = "s",
+                    M = "c",
+                    R = "o",
+                    A = "n",
+                    W = "H",
+                    F = "X",
+                    S = "T")
+
+Traduzca <- function(nombre) {
+  resultado<- ""
+  Mensaje1 <- strsplit(nombre, "")[[1]]
+  for(caracter in Mensaje1) {
+    if(caracter!=" "){
+      resultado<- paste(resultado, diccionario[[caracter]])
+    } else {
+      resultado<- paste(resultado, caracter)}
+  }
+  resultado}
+
+Traduzca("MRROEZAHO GFSOHMMZRA PUAGJ KGEZH ARMWG")
+    
+    
+#Respuesta   
+# " c o o r d i n A r   E X T r A c c i o n   l u n E s   M E d i A   n o c H E"    
